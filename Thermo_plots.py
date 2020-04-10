@@ -3,15 +3,16 @@ import numpy as np
 import math
 import sys
 
-f = open("test.out", 'w')
+f = open("Output.out", 'w')
 sys.stdout = f
 
 #Mechanism input
-ct.add_directory('\yalamakk\Desktop\Kiran_intern_data\Kiran_ios\CloudFlame')
-gas = ct.Solution('Aramco1.3_mech.cti')
+ct.add_directory('#####input directory of mechanism########')
+gas = ct.Solution('#######Mech_file.cti####################')
 
 #define variables
 s = gas.n_species
+#####input reaction number here######
 i = 115
 
 def thermocalculator(stoic_coeff):

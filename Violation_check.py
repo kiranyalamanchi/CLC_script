@@ -6,16 +6,17 @@ import numpy as np
 import math
 
 import sys
-f = open("test_1.out", 'w')
+f = open("Output.out", 'w')
 sys.stdout = f
 
 #Mechanism input
-ct.add_directory('\yalamakk\Desktop\Kiran_intern_data\Kiran_ios\CloudFlame')
-gas = ct.Solution('Anne_mech.cti')
+ct.add_directory('#####input directory of mechanism########')
+gas = ct.Solution('#######Mech_file.cti####################')
 
 #define variables
 r = gas.n_reactions
 s = gas.n_species
+######Change following temperatre Accordingly#########
 gas.TP = 500, 1.013e+8
 T = gas.T
 #v is no. of reactions violating limit and b is no. of bimolecular reactions in mechanism#

@@ -6,17 +6,18 @@ import numpy as np
 import math
 
 import sys
-f = open("test_1.out", 'w')
+f = open("Output.out", 'w')
 sys.stdout = f
 
 #Mechanism input
-ct.add_directory('\yalamakk\Desktop\Kiran_intern_data\Kiran_ios\CloudFlame')
-gas = ct.Solution('Anne_mech.cti')
+ct.add_directory('#####input directory of mechanism########')
+gas = ct.Solution('#######Mech_file.cti####################')
 
 #define variables
 r = gas.n_reactions
 s = gas.n_species
-T_min = 300
+######Change following Values Accordingly#########
+T_min = 300    
 T_max = 2500
 T_step = 50
 T = T_min
